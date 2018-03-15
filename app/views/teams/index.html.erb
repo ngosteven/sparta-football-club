@@ -1,0 +1,20 @@
+<h1>Teams page</h1>
+<table>
+	<thead>
+		<tr>Name </tr>
+		<tr>Manager_ID </tr>
+		<tr>Player_ID </tr>
+	</thead>
+	<tbody>
+		<%@team.each do |team|%>
+		<tr>
+			<td><%=team.name%></td>
+			<td><%=team.manager_id%></td>
+			<td><%=team.player_id%></td>
+			<td><%= link_to 'Show', team %></td>
+			<td><%= link_to 'Edit', edit_team_path(team) %></td>
+			<td><%= link_to 'Destroy', team, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+		</tr>
+		<%end%>
+	</tbody>
+</table>

@@ -1,0 +1,22 @@
+<h1>Players page</h1>
+<table>
+	<thead>
+		<tr>Name </tr>
+		<tr>Team_ID </tr>
+		<tr>Position </tr>
+		<tr>Number </tr>
+	</thead>
+	<tbody>
+		<%@player.each do |player|%>
+		<tr>
+			<td><%=player.name%></td>
+			<td><%=player.team_id%></td>
+			<td><%=player.position%></td>
+			<td><%=player.number%></td>
+			<td><%= link_to 'Show', player %></td>
+			<td><%= link_to 'Edit', edit_player_path(player) %></td>
+			<td><%= link_to 'Destroy', player, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+		</tr>
+		<%end%>
+	</tbody>
+</table>

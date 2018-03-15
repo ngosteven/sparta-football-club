@@ -1,0 +1,15 @@
+<%=form_for(@team) do |f| %>
+	<p>
+		<%=f.label :name%><br>
+		<%=f.text_field :name%><br>
+	</p>
+	<p>
+		<%=f.label :manager_id%><br>
+		<%=f.text_field :manager_id%><br>
+	</p>
+	<p>
+		<%=f.label :player_id%><br>
+		<%=f.text_field :player_id%><br>
+	</p>
+	<%=f.submit%>
+<%end%>

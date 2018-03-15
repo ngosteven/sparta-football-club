@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  manager_id: MyString
+  player_id: MyString
+
+two:
+  name: MyString
+  manager_id: MyString
+  player_id: MyString
